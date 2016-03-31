@@ -57,7 +57,7 @@
 		// 2 username
 		// 3 password
 		// 4 database
-		$mysql = new mysqli("localhost", $db_webpr2016, $db_webpr16, "messages_sample");
+		$mysql = new mysqli("localhost", $db_username, $db_password, "webpr2016_dmibre");
 		
 		$stmt = $mysql->prepare("INSERT INTO messages_sample (recipient, message) VALUES (?,?)");
 			
@@ -85,8 +85,7 @@
 	
 ?>
 <br>
-<a href="table.php">app</a>
-
+<a href="table.php">table</a>
 <h2> First application </h2>
 
 <form method="get">
@@ -101,3 +100,4 @@
 
 <form>
 
+<p>Idea</p>
